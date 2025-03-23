@@ -10,7 +10,6 @@ import (
 func SetupRoutes(router *gin.Engine) {
 	api := router.Group("/api")
 	{
-		api.GET("/videos", handlers.GetVideoList)
 		api.GET("/files", handlers.GetFileList)
 	}
 }
